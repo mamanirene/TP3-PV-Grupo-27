@@ -13,13 +13,16 @@ import java.util.Scanner;
  */
 public class Principal7 {
 
+  
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int opc,mo;  boolean band=false;
-        String p,m,c,tdc;
+        int opc,mo=0;  boolean band=false;
+        String Pa=null,m=null,c=null,tdc=null;
+        
         Auto a1 = new Auto("AIY 342","Renault 9", "Bordo", 1994, "Nafta" );
         Auto a2 = new Auto("SOP 724", "Fiat ", "Rojo",1998,"Nafta");
         Auto a3 = new Auto ("LKS 591", "Chevrolet", "Blanco", 2015, "Gasoil");
@@ -45,57 +48,21 @@ public class Principal7 {
                 {
                    case 1:
                         {  
-                            arreglodeautos.borrarAuto(0);
-                            System.out.println("Ingrese Patente:");
-                             p=dat.nextLine();
-                            System.out.println("Ingrese Marca:");
-                            m=dat.nextLine();
-                            System.out.println("Ingrese Color:");
-                            c=dat.nextLine();
-                            System.out.println("Ingrese Modelo:");
-                            mo=dat.nextInt();
-                            System.out.println("Ingrese Tipo de combustible: ");
-                            tdc=dat.nextLine();
-                          arreglodeautos.editarAuto(p, m, c, mo, tdc);
-                          arreglodeautos.agregarAuto(a1, 0);
+                            
+                            arreglodeautos.editarAuto(Pa, m, c, mo, tdc);
                            arreglodeautos.mostrarArreglo();    
                         }break;
                    case 2:
                         {
-                            arreglodeautos.borrarAuto(1);
-                            System.out.println("Ingrese Patente:");
-                              p=dat.nextLine();
-                            System.out.println("Ingrese Marca:");
-                            m=dat.nextLine();
-                            System.out.println("Ingrese Color:");
-                            c=dat.nextLine();
-                            System.out.println("Ingrese Modelo:");
-                            mo=dat.nextInt();
-                            System.out.println("Ingrese Tipo de combustible: ");
-                            tdc=dat.nextLine();
-                          arreglodeautos.editarAuto(p, m, c, mo, tdc);
-                          arreglodeautos.agregarAuto(a2, 1);
+                          arreglodeautos.editarAuto(Pa, m, c, mo, tdc);
                            arreglodeautos.mostrarArreglo();    
-                          
+                         
     
                         }break;
                     case 3:
                         { 
-                            arreglodeautos.borrarAuto(2);
-                            System.out.println("Ingrese Patente:");
-                              p=dat.nextLine();
-                            System.out.println("Ingrese Marca:");
-                            m=dat.nextLine();
-                            System.out.println("Ingrese Color:");
-                            c=dat.nextLine();
-                            System.out.println("Ingrese Modelo:");
-                            mo=dat.nextInt();
-                            System.out.println("Ingrese Tipo de combustible: ");
-                            tdc=dat.nextLine();
-                          arreglodeautos.editarAuto(p, m, c, mo, tdc);
-                          arreglodeautos.agregarAuto(a3, 2);
+                            arreglodeautos.editarAuto(Pa, m, c, mo, tdc);
                            arreglodeautos.mostrarArreglo();    
-                          
                            
                         } break;
                     case 4:
